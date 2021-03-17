@@ -1,0 +1,153 @@
+Handson_Day3
+1)
+package com.pack;
+import java.util.Scanner;
+
+class Venue {
+	String name,city;
+	Venue(String n,String c) {
+		name=n;
+		city=c;
+
+	}
+}
+public class Program1 {
+
+	public static void main(String[] args) {
+		String str1,str2;
+		
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a Venue name: "); 
+		str1= s.nextLine();
+		System.out.println("Enter City name:");
+		str2 = s.nextLine();
+		Venue v=new Venue(str1,str2);
+		System.out.println("Venue details:");
+		System.out.println("Venue name: "+v.name);	
+		System.out.println("City name: "+v.city);
+		
+          
+	}
+
+}
+Output:
+Enter a Venue name: 
+M.A. Chidhambaram Stadium
+Enter City name:
+Chennai
+Venue details:
+Venue name: M.A. Chidhambaram Stadium
+City name: Chennai
+2)
+package com.pack;
+import java.util.Scanner;
+
+  class Player{
+	  String name,country,skill;
+	  Player(String n,String c,String s){
+		  name=n;
+		  country=c;
+		  skill=s;
+	  }
+	  
+  }
+  public class Program2 {
+	  public static void main(String[] args) {
+		 
+	  String str1,str2,str3;
+	  Scanner scan=new Scanner(System.in);
+	  System.out.println("Enter the Player Name: ");
+	  str1 = scan.nextLine();
+	  System.out.println("Enter the Country Name: ");
+	  str2 = scan.nextLine();
+	  System.out.println("Enter the Skill");
+	  str3 = scan.nextLine();
+	  Player p=new Player(str1,str2,str3);
+	  System.out.println("Player Details:");
+	  System.out.println("Player Name: "+p.name);
+	  System.out.println("Country Name: "+p.country);
+	  System.out.println("Skill: "+p.skill);
+	  }
+}
+Output:
+Enter the Player Name: 
+M.S.Dhoni
+Enter the Country Name: 
+India
+Enter the Skill
+All Rounder
+Player Details:
+Player Name: M.S.Dhoni
+Country Name: India
+Skill: All Rounder
+3)
+package com.pack;
+import java.util.Scanner;
+
+class Delivery{
+	public long over,balls,runs;
+	public String batsman,bowler,nonStriker;
+	
+	Delivery(long x,long y,long z,String s1,String s2,String s3){
+		over=x;
+		balls=y;
+		runs=z;
+		batsman=s1;
+		bowler=s2;
+		nonStriker=s3;
+	}
+	void displayDeliveryDetails() {
+		System.out.println("Delivery details:");
+		System.out.println("Overs: "+over);
+		System.out.println("Balls: "+balls);
+		System.out.println("Runs: "+runs);
+		System.out.println("Batsman: "+batsman);
+		System.out.println("Bowler: "+bowler);
+		System.out.println("NonStriker: "+nonStriker);
+	}
+	}
+public class Program3 {
+
+	public static void main(String[] args) {
+		long a,b,c,e;
+		String bat,bow,nonst,out;
+		Scanner s=new Scanner(System.in);
+		Scanner s1=new Scanner(System.in);
+		System.out.println("Enter the overs: ");
+		a=s.nextLong();
+		System.out.println("Enter the balls: ");
+		b=s.nextLong();
+		System.out.println("Enter the runs: ");
+		c=s.nextLong();
+		System.out.println("Enter the batsman name:");
+		bat=s1.nextLine();
+		System.out.println("Enter the nonStriker: ");
+		nonst=s1.nextLine();
+		System.out.println("Enter the bowler name: ");
+		bow=s1.nextLine();
+		Delivery d=new Delivery(a,b,c,bat,bow,nonst);
+		d.displayDeliveryDetails();
+
+	}
+
+}
+Output:
+Enter the overs: 
+1
+Enter the balls: 
+1
+Enter the runs: 
+4
+Enter the batsman name:
+M.S.Dhoni
+Enter the nonStriker: 
+Dale Steyn
+Enter the bowler name: 
+Suresh Raina
+Delivery details:
+Overs: 1
+Balls: 1
+Runs: 4
+Batsman: M.S.Dhoni
+Bowler: Suresh Raina
+NonStriker: Dale Steyn

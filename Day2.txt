@@ -1,0 +1,137 @@
+Sathya Priyadharshini G(51924336)
+Handson_Day2
+1)
+package com.day2;
+
+public class Program1 {
+
+public static void main(String[ ] args) {
+
+		      int x = 5;
+
+		      while (x > 1) {
+
+		          x = x + 1;
+
+		          if (x < 3) {
+
+		               System.out.println("small x");
+
+		          }
+
+		      }
+
+		 }
+
+	}
+Output:
+small x
+2)
+package com.day2;
+
+public class Digit {
+
+	public static void main(String[] args) {
+        int x = 1;
+        while (x < 10) {
+        	if (x > 3) {
+        		System.out.println("big x");
+            }
+        }
+    }
+}
+3)
+package com.day2;
+
+public class Loop {
+	public static void main(String[] args) {
+		int x = 5;
+		while (x  > 1) {
+			x = x - 1;
+
+			if (x < 3) {
+
+				System.out.println("small x");
+
+}
+
+}
+
+	}
+
+}
+Output:
+small x
+small x
+)))
+package com.day2;
+
+public class HelloRank {
+
+	public static void main(String[] args) {
+        String name = "Rank";
+
+        /* Now let's say hello */
+
+       System.out.println("Hello "+ name);
+	
+
+	}
+
+}
+Output:
+Hello Rank
+)))
+The error in the Program is: in the 8th and 14th line, system.out.print is given instead of system.out.println
+)))
+package com.day2;
+
+public class Area {
+	public static void main(String[ ] args){
+        double a;
+  double r;
+  final double pi = Math.PI;
+
+  r = 1.0;
+  a = pi * r * r;
+  display(r,a);
+
+  r = 1.5;
+  a = pi * r * r;
+  display(r,a);
+
+  r = 2.0;
+   a = pi * r * r;
+  display(r,a);
+    }//end main
+    //-------------------------------------------//
+    static void display(double r, double a){
+         System.out.println("For radius = " + r +
+                              ", area = " + a);
+    }//end print
+
+}
+Output:
+For radius = 1.0, area = 3.141592653589793
+For radius = 1.5, area = 7.0685834705770345
+For radius = 2.0, area = 12.566370614359172
+)))
+package com.day2;
+
+public class Hexy {
+    public static void main (String[] args)    {
+
+        Integer i = 42;
+
+        String s = (i<40)?"life"(i>50)?"universe":"everything";
+
+        System.out.println(s);
+
+    }
+
+}
+Output:
+An Exception is Thrown at Runtime
+
+
+
